@@ -1,0 +1,68 @@
+.banner {
+  width: 100vw;
+  height: 20vh;
+  background-color: #006f79;
+  padding: 0.1px;
+  padding: 2rem;
+  margin-top: 6rem;
+}
+
+.banner__description,
+.banner__title {
+  color: white;
+}
+
+.banner__title {
+  font-size: 3rem;
+  margin-bottom: 0.4rem;
+}
+
+.banner__description {
+  margin-top: 0;
+  font-size: 1.6rem;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 320px) and (max-width: 416px) {
+  .banner {
+    height: 14rem;
+  }
+
+  .banner__title {
+    font-size: 3rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .banner__description {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 528px) {
+  .banner {
+    width: 94vw;
+    height: 30vh;
+    padding: 4rem 6rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .banner__title {
+    font-size: 4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .banner__description {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 786px) {
+  .banner {
+    width: 80vw;
+  }
+
+  .banner__title {
+    font-size: 5rem;
+  }
+}

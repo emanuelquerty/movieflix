@@ -1,0 +1,47 @@
+.search-movies-modal {
+  background-color: #fff;
+  padding: 8rem 4rem;
+  width: 80%;
+  height: 100vh;
+  box-shadow: 1px 1px 5px;
+  position: absolute;
+  left: 0; /* 40% is 1/2 (75%) required for horizontal centering */
+  top: 0;
+  z-index: 999;
+  overflow-y: auto;
+}
+
+.search-movies-modal--show {
+  display: block;
+}
+
+.search-movies-modal--hide {
+  display: none;
+}
+
+@media (min-width: 786px) {
+  .search-movies-modal {
+    width: 80%;
+    height: initial;
+    max-height: 95vh;
+    left: calc(
+      50% - 40%
+    ); /* 40% is 1/2 (75%) required for horizontal centering */
+    top: 2.5%;
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 416px) {
+  .search-movies-modal {
+    padding: 4rem 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .search-movies-modal {
+    width: 60%;
+    left: calc(50% - 30%);
+    top: 2.5%;
+  }
+}

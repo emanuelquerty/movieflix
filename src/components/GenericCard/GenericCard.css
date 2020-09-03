@@ -1,0 +1,19 @@
+.generic-card {
+  cursor: pointer;
+  width: 17rem;
+  margin-right: 2rem;
+}
+
+.generic-card__image {
+  width: 17rem;
+}
+
+.generic-card__title,
+.generic-card__small-text {
+  margin: 0.4rem;
+}
+
+.generic-card__title {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}

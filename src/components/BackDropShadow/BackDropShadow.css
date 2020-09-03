@@ -1,0 +1,18 @@
+.backdrop-shadow {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.56);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 998;
+  overflow: hidden;
+}
+
+.backdrop-shadow--show {
+  display: block;
+}
+
+.backdrop-shadow--hide {
+  display: none;
+}

@@ -1,0 +1,11 @@
+.card-list {
+  margin-top: 4rem;
+}
+
+.no-movie-entered-message {
+  background-color: salmon;
+  color: rgb(100, 100, 100);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 4rem;
+}

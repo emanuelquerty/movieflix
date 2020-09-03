@@ -1,0 +1,27 @@
+.small-card {
+  cursor: pointer;
+  width: 17rem;
+  margin-right: 2rem;
+}
+
+.small-card__image {
+  width: 17rem;
+}
+
+.small-card__title,
+.small-card__release-date,
+.small-card__rating {
+  margin: 0.4rem;
+}
+
+.small-card__title {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 786px) {
+  .small-card__image {
+    margin: initial;
+    width: 17rem;
+  }
+}

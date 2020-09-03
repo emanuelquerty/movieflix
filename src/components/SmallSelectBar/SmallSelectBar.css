@@ -1,0 +1,47 @@
+.popular-header__popular-title {
+  font-size: 2rem;
+  margin: 4rem 0 2rem 0;
+}
+
+.popular-header__select-category {
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+.select-category__option {
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.select-category__option--active {
+  background-color: #333;
+  color: #fff;
+  font-weight: normal;
+}
+
+@media (min-width: 532px) {
+  .popular-header__select-category {
+    flex-direction: row;
+    width: 50rem;
+    height: 3rem;
+    border-radius: 4rem;
+  }
+
+  .select-category__option {
+    border-radius: 4rem;
+  }
+
+  .popular-header__popular-title {
+    font-size: 2.5rem;
+    margin: 4rem 0;
+  }
+}

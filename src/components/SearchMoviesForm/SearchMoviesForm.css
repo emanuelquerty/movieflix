@@ -1,0 +1,46 @@
+:root {
+  --bg-color-darken: #006064;
+  --bg-color-lighten-2: #0097a7;
+  --bg-color-lighten-1: #00acc1;
+}
+
+.form {
+  display: grid;
+}
+
+input {
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+  line-height: 2.8rem;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid #aaa;
+}
+
+.button {
+  background-color: var(--bg-color-lighten-2);
+  color: white;
+  padding: 1rem 2rem;
+  border: 1px solid var(--bg-color-lighten-2);
+  border-radius: 20px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 250ms;
+}
+
+.button:hover {
+  background-color: var(--bg-color-lighten-1);
+}
+
+@media (min-width: 786px) {
+  .form {
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    align-items: baseline;
+  }
+}

@@ -1,0 +1,62 @@
+:root {
+  --bg-color-darken: #006064;
+  --bg-color-lighten: #26c6da;
+}
+
+.navbar {
+  background-color: var(--bg-color-darken);
+  height: 6rem;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 10rem;
+  position: fixed;
+}
+
+#app-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-right: 4rem;
+}
+
+.navbar__link:hover {
+  color: #c5e1a5;
+}
+
+.navbar__search-icon {
+  font-size: 3rem !important;
+  position: absolute;
+  right: 10rem;
+  top: 1.5rem;
+}
+
+@media (max-width: 320px) {
+  #app-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 460px) {
+  .home {
+    display: none;
+  }
+}
+
+@media (max-width: 786px) {
+  .navbar {
+    padding-left: 2rem;
+  }
+
+  .navbar__search-icon {
+    right: 2rem;
+    top: 1.5rem;
+  }
+}
