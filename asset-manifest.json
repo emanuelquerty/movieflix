@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/movieflix/static/css/main.65c92fef.chunk.css",
-    "main.js": "/movieflix/static/js/main.cb7f9834.chunk.js",
-    "main.js.map": "/movieflix/static/js/main.cb7f9834.chunk.js.map",
+    "main.js": "/movieflix/static/js/main.0ab8765d.chunk.js",
+    "main.js.map": "/movieflix/static/js/main.0ab8765d.chunk.js.map",
     "runtime-main.js": "/movieflix/static/js/runtime-main.3ffea526.js",
     "runtime-main.js.map": "/movieflix/static/js/runtime-main.3ffea526.js.map",
     "static/js/2.2a0e6793.chunk.js": "/movieflix/static/js/2.2a0e6793.chunk.js",
     "static/js/2.2a0e6793.chunk.js.map": "/movieflix/static/js/2.2a0e6793.chunk.js.map",
     "index.html": "/movieflix/index.html",
-    "precache-manifest.7db50a6d2c43294fca8fe885e56f54e7.js": "/movieflix/precache-manifest.7db50a6d2c43294fca8fe885e56f54e7.js",
+    "precache-manifest.6593cb7deac1e2fa42560c9a36c1e285.js": "/movieflix/precache-manifest.6593cb7deac1e2fa42560c9a36c1e285.js",
     "service-worker.js": "/movieflix/service-worker.js",
     "static/css/main.65c92fef.chunk.css.map": "/movieflix/static/css/main.65c92fef.chunk.css.map",
     "static/js/2.2a0e6793.chunk.js.LICENSE.txt": "/movieflix/static/js/2.2a0e6793.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.3ffea526.js",
     "static/js/2.2a0e6793.chunk.js",
     "static/css/main.65c92fef.chunk.css",
-    "static/js/main.cb7f9834.chunk.js"
+    "static/js/main.0ab8765d.chunk.js"
   ]
 }
