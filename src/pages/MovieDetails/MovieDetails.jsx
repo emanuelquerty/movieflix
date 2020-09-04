@@ -13,24 +13,26 @@ const MovieDetails = (props) => {
   // Get the movieId from pathname
   const { location } = props;
   let pathnameArray = location.pathname.split("/");
+  let movieOrTv = pathnameArray[1];
   let movieId = pathnameArray[2].split("-")[0];
 
   // UseEffect for getting the movie banner info
   useEffect(() => {
     let searchMoviesService = new SearchMoviesService();
-    searchMoviesService.getMovieById(movieId).then((movieData) => {
+    searchMoviesService.getMovieById(movieId, movieOrTv).then((movieData) => {
+      console.log(movieData);
       setMovie(movieData);
     });
-  }, [movieId]);
+  }, [movieId, movieOrTv]);
 
   // UseEffect for getting the full cast
   // UseEffect for getting the movie banner info
   useEffect(() => {
     let searchMoviesService = new SearchMoviesService();
-    searchMoviesService.getFullCast(movieId).then((data) => {
+    searchMoviesService.getFullCast(movieId, movieOrTv).then((data) => {
       setmovieCast(data.cast);
     });
-  }, [movieId]);
+  }, [movieId, movieOrTv]);
 
   return (
     <div className="movie-details">

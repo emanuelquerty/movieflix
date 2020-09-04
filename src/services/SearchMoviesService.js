@@ -17,8 +17,8 @@ class SearchMoviesService {
     }
   }
 
-  async getAll(movieCategory) {
-    const url = `${this.baseUrl}/movie/${movieCategory}?api_key=${this.apiKey}&${this.misc}`;
+  async getAll(category, movieOrTv) {
+    const url = `${this.baseUrl}/${movieOrTv}/${category}?api_key=${this.apiKey}&${this.misc}`;
 
     try {
       const res = await fetch(url);
@@ -28,8 +28,8 @@ class SearchMoviesService {
     }
   }
 
-  async getMovieById(id) {
-    const url = `${this.baseUrl}/movie/${id}?api_key=${this.apiKey}&${this.misc}`;
+  async getMovieById(id, movieOrTv) {
+    const url = `${this.baseUrl}/${movieOrTv}/${id}?api_key=${this.apiKey}&${this.misc}`;
 
     try {
       const res = await fetch(url);
@@ -39,8 +39,8 @@ class SearchMoviesService {
     }
   }
 
-  async getFullCast(id) {
-    const url = `${this.baseUrl}/movie/${id}/credits?api_key=${this.apiKey}&${this.misc}`;
+  async getFullCast(id, movieOrTv) {
+    const url = `${this.baseUrl}/${movieOrTv}/${id}/credits?api_key=${this.apiKey}&${this.misc}`;
 
     try {
       const res = await fetch(url);

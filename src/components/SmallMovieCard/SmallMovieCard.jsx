@@ -8,8 +8,17 @@ const SmallMovieCard = (props) => {
   const { movie, history } = props;
 
   function showMovieDetailsPage() {
-    history.push(`/movie/${movie.id}`);
+    let movieOrTvShow = movie.title ? "movie" : "tv";
+    let titleOrname = movie.title || movie.name;
+    console.log(titleOrname);
+
+    const regex = / /gi; // regex for matching all instances of single spaces
+    history.push(
+      `/${movieOrTvShow}/${movie.id}-${titleOrname.replace(regex, "-")}`
+    );
   }
+
+  console.log(movie);
 
   return (
     <div className="small-card" onClick={showMovieDetailsPage}>
@@ -19,9 +28,13 @@ const SmallMovieCard = (props) => {
         alt={movie.title + "poster"}
       />
       <div className="small-card__content">
-        <h3 className="small-card__title">{movie.title}</h3>
+        <h3 className="small-card__title">{movie.title || movie.name}</h3>
         <p className="small-card__release-date">
-          <small>Release Date: {movie.release_date}</small>
+          <small>
+            {movie.release_date
+              ? "Release Date: " + movie.release_date
+              : "First Air Date: " + movie.first_air_date}
+          </small>
         </p>
         <p className="small-card__rating">
           <small>Rating: {movie.vote_average}</small>

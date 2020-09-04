@@ -3,26 +3,26 @@
   flex-wrap: wrap;
 } */
 
-.popular-movies {
+.popular {
   display: flex;
   overflow-x: auto;
   scrollbar-width: none; /* Hide Scrollbar Firefox */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-.popular-movies::-webkit-scrollbar {
+.popular::-webkit-scrollbar {
   display: none;
 }
 
 @media (min-width: 786px) {
-  .popular-movies {
+  .popular {
     flex-wrap: initial;
     overflow-x: auto;
     scrollbar-width: none; /* Hide Scrollbar Firefox */
   }
 
   /* Hide scrollbar for Chrome, Safari and Opera */
-  .popular-movies::-webkit-scrollbar {
+  .popular::-webkit-scrollbar {
     display: none;
   }
 }

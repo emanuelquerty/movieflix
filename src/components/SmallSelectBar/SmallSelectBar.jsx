@@ -11,8 +11,7 @@ const SmallSelectBar = (props) => {
   // selected state based on options state
   function getOptions() {
     let className = "select-category__option ";
-    let optionsLabel = ["For Rent", "In Theathers", "Top Rated"];
-    let movieCategories = ["popular", "now_playing", "top_rated"];
+    let { optionsLabel, categories } = props;
 
     return options.map((activeState, index) => {
       return (
@@ -30,9 +29,9 @@ const SmallSelectBar = (props) => {
             newOptions[index] = true;
             setOptions(newOptions);
 
-            // Change the movie caregory to display, i.e popular, now_playing, etc;
+            // Change the movie/tv-show caregory to display, i.e popular, now_playing, etc;
             // This trigger fetching of moves from this new category in Home.js component
-            props.onSetMovieCategory(movieCategories[index]);
+            props.onSetCategory(categories[index]);
           }}
         >
           {/* Now we display each option, i.e For Rent, In Theathers, etc */}

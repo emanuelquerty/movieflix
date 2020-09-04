@@ -22,6 +22,9 @@ function App() {
         <Switch>
           <Route exact path="/movie/:id" render={() => <MovieDetails />} />
         </Switch>
+        <Switch>
+          <Route exact path="/tv/:id" render={() => <MovieDetails />} />
+        </Switch>
       </main>
       <SearchMoviesModal
         show={searchMoviesModalIsOpen}
