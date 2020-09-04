@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3143d6ba8f357ffdc2412c3aa1f68f3b",
+    "revision": "b180f0ea48bbd2a5eaeb26d53638a0eb",
     "url": "/movieflix/index.html"
   },
   {
-    "revision": "fb2a5b07e0afe5abc6d8",
-    "url": "/movieflix/static/css/main.188a2d6a.chunk.css"
+    "revision": "e2be833107f1ed1fb950",
+    "url": "/movieflix/static/css/main.68ef3c05.chunk.css"
   },
   {
     "revision": "fb4f2c3aa7ba05558688",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/movieflix/static/js/2.2a0e6793.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fb2a5b07e0afe5abc6d8",
+    "revision": "e2be833107f1ed1fb950",
     "url": "/movieflix/static/js/main.ec42a26c.chunk.js"
   },
   {
