@@ -5,6 +5,8 @@ The UI design was inspired by TMDB Web Application UI.
 
 This app was build with React.js and bootstrapped with create-react-app
 
+### Live ULR: https://emanuelquerty.github.io/movieflix/
+
 ## Most Relevant Available Scripts
 
 In the project directory, you can run:
