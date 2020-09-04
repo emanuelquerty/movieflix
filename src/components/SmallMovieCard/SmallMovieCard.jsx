@@ -10,15 +10,12 @@ const SmallMovieCard = (props) => {
   function showMovieDetailsPage() {
     let movieOrTvShow = movie.title ? "movie" : "tv";
     let titleOrname = movie.title || movie.name;
-    console.log(titleOrname);
 
     const regex = / /gi; // regex for matching all instances of single spaces
     history.push(
       `/${movieOrTvShow}/${movie.id}-${titleOrname.replace(regex, "-")}`
     );
   }
-
-  console.log(movie);
 
   return (
     <div className="small-card" onClick={showMovieDetailsPage}>
