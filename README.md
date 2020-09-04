@@ -1,7 +1,8 @@
 ## MovieFlix
 
-A movie application that enables searching of movie information from the TMDB movie API.
-The UI design was inspired by TMDB Web Application UI.
+A movie application that enables searching of movie and tv show information.
+The App uses the TMDB API to fetch movie informations and the UI design
+was inspired by the TMDB Web Application UI.
 
 This app was build with React.js and bootstrapped with create-react-app
 
