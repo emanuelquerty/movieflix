@@ -20,7 +20,6 @@ const MovieDetails = (props) => {
   useEffect(() => {
     let searchMoviesService = new SearchMoviesService();
     searchMoviesService.getMovieById(movieId, movieOrTv).then((movieData) => {
-      console.log(movieData);
       setMovie(movieData);
     });
   }, [movieId, movieOrTv]);
